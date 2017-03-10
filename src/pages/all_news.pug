@@ -1,0 +1,37 @@
+extends layouts/index
+
+block meta
+  title Наши новости
+
+block content
+
+  .head-cover(style="background-image: url('../images/cover.jpg')")
+  .document-content
+    .content-head
+      .wrapper
+        h1.title Наши новости
+
+    .content-body
+      .wrapper
+        aside.content-body-sidebar
+          ul.float-list
+            li.active Март 2017
+            li Февраль 2017
+            li Январь 2017
+            li 2016
+            li 2015
+        .content-body-main
+          - for (var i=0; i<=5; i++)
+            .news-item
+              .image
+                img(src="images/cover.jpg")
+              .info
+                span.date 11.12.2017
+                a.title(href="javascript:;") Основы электротехники и электроники              
+                span.text(href="javascript:;") Вводный курс по астрономии приводит знания о космических явлениях в стройную систему, а также знакомит слушателей с современными исследованиями.          
+            .news-item
+              .info
+                span.date 11.12.2017
+                a.title(href="javascript:;") Основы электротехники и электроники
+                .text(href="javascript:;") Вводный курс по астрономии приводит знания о космических явлениях в стройную систему, а также знакомит слушателей с современными исследованиями и важнейшими открытиями ученых. Профессиональных астрономов в мире совсем немного — около 15 тысяч человек, объединенных Международным астрономическим союзом. Но сотни тысяч любителей с не меньшим увлечением наблюдают и изучают космические объекты.          
+          a.simple-link.-back(href="javascript:;") Февраль 2017

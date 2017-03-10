@@ -1,0 +1,31 @@
+.news-item
+  display: block
+  margin-bottom: 25px
+
+  >.image
+    float: left
+
+    & > img
+      height: 120px
+      width: 200px
+
+    & + .info
+      width: calc(100% - 220px)
+      margin-left: 220px
+
+  >.info
+    
+    >.date
+      color: $color-dark-gray
+      font-size: 12px
+      display: block
+      line-height: 12px
+
+    >.title
+      font-size: 16px
+      font-weight: bold
+      display: block
+      margin: 5px 0
+
+    >.text
+      font-size: 15px
